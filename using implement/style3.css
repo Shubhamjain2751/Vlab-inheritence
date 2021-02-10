@@ -1,0 +1,181 @@
+.body{
+	margin:0;
+	padding:0;
+	background-color: white;
+}
+html,body{
+	height:100%;
+}
+.heading{
+	position: fixed;
+	width: 100%;
+	top:0;
+	z-index: 100;
+}
+.main{
+	font-family:Trebuchet MS;
+	background-color:blue;
+	color: yellow;
+	padding :5px;
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	
+} 
+#explain{
+	overflow: auto;
+	overflow-y: hidden;
+	padding:10px;
+	border-radius: 10px;
+}
+
+h2{
+	font-weight: bold;
+	font-style: normal;
+	position: relative;
+	top:0;
+	color:yellow;
+	font-size: 25px;
+}
+
+.blocks{
+	position: fixed;top: 130px; 
+	width:100%;
+	height: 100%;
+}
+
+.btns{
+	position: relative;
+	clear:right;
+}
+.code{
+	clear:both;
+	box-sizing: border-box;
+	position: relative;
+	/*overflow: scroll;
+	*/
+	border-radius: 50px;
+	padding: 5px;
+	background-color:#778899;
+	border :10px solid #800000;
+	color:white;
+	border: 10px solid white;
+	height:500px;
+}
+.textbox{
+	border-radius:10px;
+	color:black; 
+	font-weight: normal;
+	outline: none;
+
+}
+.font{
+	font-weight: bold;
+	color: solid black;
+	font-size: 13px;
+}
+.simul{ 
+	box-sizing: border-box;
+	padding : 5px;
+	height: 500px;
+	border-radius: 50px;
+	background-color:#778899;
+	border: 10px solid #800000;
+	border: 10px solid white;
+}
+
+
+#scrollable,#scrollable2{
+	height: 400px;
+	margin-top: 10px;
+	overflow: scroll;
+	overflow-y: hidden; 
+	overflow-x: hidden;
+}
+.mybutton1,.mybutton2 
+{
+		background-color: white !important; 
+		color:black !important;
+		margin-left: 43% ;
+		transition-duration: 0.4s !important;
+  		cursor: pointer !important;
+}
+.mybutton1:hover ,.mybutton2:hover{
+  background-color: blue !important;
+  color: white !important;
+}
+#p1,#p2,#p3,#p4,#p5,#p6,#p7{
+	border-radius: 5px;
+	padding: 3px;
+}
+#animal,#bird{
+		height:15%;
+		width:40%;
+	}
+#interface{
+		height:17%;
+		width:40%;
+	}
+#prop{
+	margin-top: 20px;
+}
+#lion,#duck{
+	border-radius: 15px;
+	margin-left: 5%;
+	margin-top: 3%;
+	width:40%;
+	height:15%;
+}
+@media(min-width: 768px)
+{
+	.code,.simul{
+		padding-bottom: 20px;
+	}
+
+}
+@media(max-width:767px){
+	.code,.simul{
+		width:50vw;
+		height:60%;
+		border-radius: 25px;
+		margin-bottom: 15px;
+		padding-bottom: 20px;
+	}
+	.mybutton1,.mybutton2{
+		margin-left:40% ;
+
+	}
+	#scrollable,#scrollable2{
+		height: 35vh;
+		overflow: scroll;
+		overflow-y: visible;
+	}
+	.font{
+		font-size: 8px;
+	}
+	.main{
+		font-size: 35px;
+		padding: 10px;
+		width:100%;
+	}
+	#interface{
+		height: 11vh;
+	}
+	#animal,#bird{
+		font-size: .9em;
+		height:17vh ;
+		width:40%;
+	}
+	#prop{
+		margin-top: 1vh;
+	}
+	#lion,#duck{
+		border-radius: 15px;
+		margin-left: 5%;
+		margin-top: 3%;
+		width:40%;
+		height:15%;
+	}
+}

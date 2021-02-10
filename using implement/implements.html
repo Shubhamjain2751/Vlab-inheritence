@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style2.css">
+		<link rel="stylesheet" type="text/css" href="style3.css">
+		<link rel="stylesheet" type="text/css" href="../trial.css">
+		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=DM+Mono&display=swap" rel="stylesheet">
+		<title>Implemented</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class = "heading">
+				<div class="main">Inheritence using implement</div>
+				<div class="col-xs-6" id="btns" style="width:70%">
+					<button type="button" class="btn btn-primary btn-lg active mybutton1 " id="abc" style="outline: none; margin-left: 66%" onclick="cntline()";>Start</button>
+					<button type="button" class="btn btn-primary btn-lg active mybutton2" id="abcd" style="outline: none;background-color: white;color:black ;visibility:hidden;margin-left: 18px;" onclick="window.location.href='implements.html'" >Reset</button>
+				</div>
+				<div class="col-xs-4" id="explain" style="width:30%;height: 40px;background-color: red;visibility: hidden"></div>
+			</div><!-- heading -->
+
+			<div class="blocks">
+				<div class = "code col-width col-sm-6 col-xs-6 font" >
+						<header  id="l0" style="text-align: center"><h2>Code Section</h2></header>
+						<div id="scrollable">
+						<div id="l1">
+							<div style="padding-left: 10px;">interface Action<br>{</div>
+							<div id="l2">
+								<div style="padding-left: 20px;">void run();</div>
+								<div style="padding-left: 20px;">void sleep();</div>
+								<div style="padding-left: 20px;">void fly();</div>
+							</div>
+							<div style="padding-left: 10px;">}</div>
+						</div>
+						<div id="l3">
+							<div style="padding-left: 10px;">class Animal implements Action<br>{</div>
+							<div id="l4">
+								<div style="padding-left: 20px;">void run()<br>{</div>
+								<div style="padding-left: 30px;">System.out.println("Animal running !!!");</div>
+								<div style="padding-left: 20px;">}</div>
+							</div>       
+							<div id="l5">
+								<div style="padding-left: 20px;">void sleep()<br>{</div>
+								<div style="padding-left: 30px;">System.out.println("Animal Sleeping !!!");</div>
+								<div style="padding-left: 20px;">}</div>
+							</div> 
+							<div style="padding-left: 10px;">}</div>
+						</div>      
+						<div id="l6">
+							<div style="padding-left: 10px;">class Bird implements Action<br>{</div>
+							<div id="l7">
+								<div style="padding-left: 20px;">void fly()<br>{</div>
+								<div style="padding-left: 30px;">System.out.println("Bird running !!!");</div>
+								<div style="padding-left: 20px;">}</div>
+							</div>       
+							<div id="l8">
+								<div style="padding-left: 20px;">void sleep()<br>{</div>
+								<div style="padding-left: 30px;">System.out.println("Bird Sleeping !!!");</div>
+								<div style="padding-left: 20px;">}</div>
+							</div>
+							<div style="padding-left: 10px;">}</div>       
+						</div>
+						<div id="l9" style="padding-left: 10px;">public class main</div>
+						<div id="l10" style="padding-left: 10px;">{</div>
+						<div id="l11" style="padding-left: 20px;">public static void main(String args)</div>
+						<div id="l12" style="padding-left: 20px;">{</div>
+						<div id="l13" style="padding-left: 30px;">Animal Lion = new Animal();</div>
+						<div id="l14" style="padding-left: 30px;">Lion.run();</div>
+						<div id="l15" style="padding-left: 30px;">Lion.sleep();</div>
+						<div id="l16" style="padding-left: 30px;">Bird Duck = new Duck();</div>
+						<div id="l17" style="padding-left: 30px;">Duck.fly();</div>
+						<div id="l18" style="padding-left: 30px;">Duck.sleep();</div>
+						<div id="l19" style="padding-left: 20px;">}</div>
+						<div id ="l20" style="padding-left: 10px;">}</div> 
+						</div>
+					</div>
+					<div class = "simul col-width col-sm-6 col-xs-6">
+						<h2 style="text-align: center">Simulation</h2>
+						<div id="scrollable2">
+							<div id="interface"style=" width : 90%;margin-left: 5%;margin-right: 5%;background-color: pink;border-radius: 10px;visibility: hidden;">
+								<div style="text-align: center;"><b>interface</b></div>
+								<div id ="prop" style="text-align: center;">
+									<div class="col-xs-4" style="visibility: hidden;"><div id="p1" style="margin-left: 5px;margin-right: 5px;margin-bottom: 5px">run()</div></div>
+									<div class="col-xs-4" style="visibility: hidden;"><div id="p2" style="margin-left: 5px;margin-right: 5px;margin-bottom: 5px">sleep()</div></div>
+									<div class="col-xs-4" style="visibility: hidden;"><div id="p3" style="margin-left: 5px;margin-right: 5px;margin-bottom: 5px">fly()</div></div>
+								</div>
+
+							</div>
+							<div style="margin-top: 3vh;">
+								<div id="animal" class="col-xs-6" style=" width:40%;margin-left: 5%;background-color: pink;border-radius: 10px;visibility: hidden;">
+									<div style="text-align: center;"><b>Class Animal</b></div>
+									<div id="prop" style="text-align: center;">
+										<div class="col-xs-6 " style="visibility: hidden;padding-bottom: 10px;"><div id="p4" style="margin-left: 5px;margin-right: 5px;margin-bottom: 5px">run()</div></div>
+										<div class="col-xs-6 " style="visibility: hidden;"><div id="p5" style="margin-left: 5px;margin-right: 5px;margin-bottom: 5px">sleep()</div></div>
+									</div>
+									
+								</div>
+								<div class="col-xs-6" id="bird" style="width:40%;margin-left: 10%;margin-right: 5%;background-color: pink;border-radius: 10px;visibility: hidden;">
+									<div style="text-align: center;"><b>Class Bird</b></div>
+									<div id="prop" style="text-align: center;">
+										<div class="col-xs-6 " style="visibility: hidden;padding-bottom: 10px;"><div id="p6" style="margin-left: 5px;margin-right: 5px;margin-bottom: 5px">fly()</div></div>
+										<div class="col-xs-6 " style="visibility: hidden;"><div id="p7" style="margin-left: 5px;margin-right: 5px;margin-bottom: 5px">sleep()</div></div>
+									</div>
+									
+								</div>
+							</div>
+						<div >
+								<img id="lion" src="../img/Lion.jpg" alt="lion run" width="30%" style="visibility:hidden">
+								<img id="duck" src="../img/duck1.jpg" alt="duck fly"  style="visibility:hidden">
+						</div>
+					</div>
+				</div><!-- simu -->
+			</div><!-- blocks -->
+		</div><!-- wrapper -->
+		<div id="warning-message">
+	    	 <img src="../html5.gif" alt="this website is only viewable in landscape mode" width="90%" height="90%" >
+		</div>
+		<script src="index3.js"></script>
+	</body>
+</html>

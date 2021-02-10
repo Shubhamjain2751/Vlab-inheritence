@@ -1,0 +1,17 @@
+.body{
+	margin:0;
+	padding:0;
+	background-color: white;
+}
+/*
+.blocks{
+	overflow: scroll;
+}*/
+
+#scrollable{
+	height: 400px;
+	margin-top: 10px;
+	overflow: scroll;
+	overflow-y:hidden;  
+	overflow-x: hidden;
+}

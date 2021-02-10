@@ -1,0 +1,22 @@
+ #warning-message{ 
+      padding-top:40px; 
+      width:100%;
+      display: none; 
+      font-size:50px;
+      font-weight: bold;
+      color:red;
+      text-align: center;
+	}
+    @media only screen and (orientation:portrait){
+        #wrapper { 
+          display:none; 
+      	}
+        #warning-message { 
+          display:block; 
+      	}
+    }
+    @media only screen and (orientation:landscape){
+        #warning-message{
+          display:none; 
+      }
+    }

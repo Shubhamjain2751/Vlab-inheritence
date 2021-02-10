@@ -1,0 +1,47 @@
+body{
+	margin: 0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+	text-align: center;
+}
+.scrollable{
+	margin-top: 15vh;
+}
+.main{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+.head{
+	padding: 10px;
+	background-color: blue;
+	color: yellow;
+	font-family:Trebuchet MS;
+	font-size: 50px;
+	font-weight: bold;
+}
+.method{
+	position: fixed;
+	top: 
+}
+.block{
+	padding: 10px;
+	margin-left: 7%;
+	margin-right: 7%;
+	font-size: 15px;
+	background-color: #cbd8e6;
+	border-radius: 10px;
+}
+@media(max-width:767px){
+
+	.head{
+		padding: 7px;
+		font-size:35px;
+	}
+	.scrollable{
+		margin-top: 15vh;
+	}
+}

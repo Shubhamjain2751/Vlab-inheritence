@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style2.css">
+		<link rel="stylesheet" type="text/css" href="style3.css">
+		<link rel="stylesheet" type="text/css" href="../trial.css">
+		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=DM+Mono&display=swap" rel="stylesheet">
+		<title>Extended</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class = "heading">
+				<div class="main">Inheritence using extend</div>
+				<div class="col-xs-6" id="btns" style="width:70%">
+					<button type="button" class="btn btn-primary btn-lg active mybutton1 " id="abc" style="outline: none; margin-left: 66%" onclick="cntline()";>Start</button>
+					<button type="button" class="btn btn-primary btn-lg active mybutton2" id="abcd" style="outline: none;background-color: white;color:black ;visibility:hidden;margin-left: 18px;" onclick="window.location.href='Extends.html'" >Reset</button>
+				</div>
+				<div class="col-xs-4" id="explain" style="width:30%;height: 40px;background-color: red;visibility: hidden"></div>
+			</div><!-- heading -->
+
+			<div class="blocks">
+				<div class = "code col-width col-sm-6 col-xs-6 font" >
+					<header id="l0" style="text-align: center"><h2>Code Section</h2></header>
+					<div id="scrollable" >
+						<div id="l1"  style="padding-left: 10px" >class Action<br>{
+							<div id="l2">
+								<div style="padding-left: 20px" >void Sleep()<br>{</div>
+								<div style="padding-left: 30px" >I'm sleeping;</div>
+								<div style="padding-left: 20px" >}</div>	
+							</div>
+							<div id="l3">	
+								<div style="padding-left: 20px" >void Eat()<br>{</div>
+								<div style="padding-left: 30px" >I'm eating;</div>
+								<div style="padding-left: 20px" >}</div>
+							</div>
+							<div style="padding-left: 10px" >}</div>
+						</div>
+						<div id="l4">
+							<div style="padding-left: 10px" >Class Animal<br>{</div>
+							<div id="l5">
+								<div style="padding-left: 20px" >void Run()<br>{</div>
+								<div style="padding-left: 30px" >i'm running</div>
+								<div style="padding-left: 20px" >}</div>
+							</div>
+							<div style="padding-left: 10px" >}</div>
+						</div>
+						<div id="l6">
+							<div style="padding-left: 10px" >Class Bird<br>{</div>
+							<div id="l7">
+								<div style="padding-left: 20px" >void Fly()<br>{</div>
+								<div style="padding-left: 30px" >i'm Flying</div>
+								<div style="padding-left: 20px" >}</div>
+							</div>
+							<div style="padding-left: 10px" >}</div>
+						</div>
+						<div id="l8" style="padding-left: 10px" >public class main<br>{</div>
+						<div id="l9" style="padding-left: 20px" >public static void main<br>{</div>
+						<div id="l10" style="padding-left: 30px" >Animal Lion = new Animal();</div>
+						<div id="l11" style="padding-left: 30px" >Bird Duck = new Bird();</div>
+						<div id="l12" style="padding-left: 30px" >Lion.Run()</div>
+						<div id="l13" style="padding-left: 30px" >Lion.Eat()</div>
+						<div id="l14" style="padding-left: 30px" >Lion.Sleep()</div>	
+						<div id="l15" style="padding-left: 30px" >Duck.Fly()</div>
+						<div id="l16" style="padding-left: 30px" >Duck.Eat()</div>
+						<div id="l17" style="padding-left: 30px" >Duck.Sleep()</div>	
+						<div id="l18" style="padding-left: 20px" >}</div>
+						<div id="l19" style="padding-left: 10px" >}</div>
+					</div>
+				</div>
+				<div class = "simul col-width col-sm-6 col-xs-6">
+					<h2 style="text-align: center">Simulation</h2>
+					<div id="scrollable2">
+						<div id="class"style=" width : 90%;margin-left: 5%;margin-right: 5%;background-color: pink;border-radius: 10px;visibility: hidden;">
+							<div style="text-align: center;"><b>interface</b></div>
+							<div id ="prop" style="text-align: center;">
+								<div class="col-xs-6" style="visibility: hidden;"><div id="p1" style="margin-left: 5px;margin-right: 5px;margin-bottom: 5px">eat()</div></div>
+								<div class="col-xs-6" style="visibility: hidden;"><div id="p2" style="margin-left: 5px;margin-right: 5px;margin-bottom: 5px">sleep()</div></div>
+							</div>
+
+						</div>
+						<div style="margin-top: 3vh;">
+							<div id="animal" class="col-xs-6" style=" width:40%;margin-left: 5%;background-color: pink;border-radius: 10px;visibility: hidden">
+								<div style="text-align: center;"><b>Class Animal</b></div>
+								<div id="prop" style="text-align: center;">
+									<div class="col-xs-12 " style="visibility: hidden;padding-bottom: 10px;"><div id="p3" style="margin-left: 5px;margin-right: 5px;margin-bottom: 5px">run()</div></div>
+								</div>
+								
+							</div>
+							<div class="col-xs-6" id="bird" style="width:40%;margin-left: 10%;margin-right: 5%;background-color: pink;border-radius: 10px;visibility: hidden;">
+								<div style="text-align: center;"><b>Class Bird</b></div>
+								<div id="prop" style="text-align: center;">
+									<div class="col-xs-12 " style="visibility: hidden;padding-bottom: 10px;"><div id="p4" style="margin-left: 5px;margin-right: 5px;margin-bottom: 5px">fly()</div></div>
+								</div>
+								
+							</div>
+						</div>
+						<div >
+								<img id="lion" src="../img/Lion.jpg" alt="lion run" width="30%" style="visibility:hidden">
+								<img id="duck" src="../img/duck1.jpg" alt="duck fly"  style="visibility:hidden">
+						</div>							
+					</div><!-- scrollable2 -->
+				</div><!-- simu -->
+			</div><!-- blocks -->
+		</div><!-- wrapper -->
+		<div id="warning-message">
+	    	 <img src="../html5.gif" alt="this website is only viewable in landscape mode" width="90%" height="90%" >
+		</div>
+		<script src="index3.js"></script>
+	</body>
+</html>
